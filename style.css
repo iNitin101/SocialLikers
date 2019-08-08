@@ -1,0 +1,78 @@
+:root
+{
+    --color-primary: #2196F3;
+    --color-primary-light: #DFF7F7;
+    --color-primary-dark: #1976D2;
+    --color-accent: #1976D2;
+    --color-primary-text: #000000;
+    --color-secondary-text: #757575;
+    --font-primary: 'Poppins', sans-serif;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    color: #000000;
+    font-family: var(--font-primary);
+}
+brand
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    background: url('./Assests/images/icon.png') center center/cover;
+    height: 2rem;
+    width: 2rem;
+    display: block;
+}
+#navbar
+{
+    display: flex;
+    background-color: var(--color-primary);
+    position: sticky;
+    color: var(--color-primary-text);
+    justify-content: space-between; 
+    z-index: 1;
+    padding: 0.3rem;
+}
+
+#nav-links
+{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link
+{
+    list-style: none;
+    padding: 0.5rem;
+    
+}
+
+.nav-link a
+{
+    color: var(--color-primary-text);
+    text-decoration: none;
+    padding: 0.5rem;
+
+}
+
+.nav-link a:hover
+{
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    border-radius: 3px;
+}
+
+#cover
+{
+    background: var(--color-primary-light) url(./Assests/images/social2.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+
