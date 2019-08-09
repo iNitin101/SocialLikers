@@ -76,3 +76,34 @@ brand
     height: 50vh;
 }
 
+#application
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+#application img
+{
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.text-content
+{
+    text-align: center;
+}
+
+#application div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    padding: 1rem 5rem 0rem 5rem;
+}
+
+#application div h1
+{
+    font-size: 4rem;
+}
