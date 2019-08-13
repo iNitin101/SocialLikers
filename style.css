@@ -1,6 +1,7 @@
 :root
 {
     --color-primary: #2196F3;
+    --color-secondary: #e47d08;
     --color-primary-light: #DFF7F7;
     --color-primary-dark: #1976D2;
     --color-accent: #1976D2;
@@ -120,10 +121,82 @@ brand
     align-content: center;
     align-items: center;
     padding: 1rem 5rem 0rem 5rem;
+    
 }
 
 #application div h1
 {
     font-size: 4rem;
+}
+
+.heading-center-main
+{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.heading-center-sub
+{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.paragraph-medium
+{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#AboutUs-Content
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+}
+#AboutUs-Content div
+{
+    padding: 4rem 0rem 0rem 4rem;
+    width: 500px;
+}
+
+
+.profile-image
+{
+    height: 15rem;
+    width: 15rem;
+    /* border-radius: 150px; */
+}
+
+#AboutUs-Team
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#AboutUs-Team-Profiles
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.AboutUs-Team-Profiles-Profile
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+    background-color: #1976D2;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 1px rgb(115, 135, 151);
 }
 
