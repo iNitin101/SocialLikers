@@ -125,6 +125,7 @@ body
     background: var(--color-primary-light) url(./Assests/images/cover1.png) no-repeat center center/cover;
     height: 100vh;
     margin-bottom: 0;
+    color: #C2CCC5;
 }
 
 #cover div
@@ -240,7 +241,7 @@ body
     align-items: center;
     align-content: center;
     width: 300px;
-    background-color: #B4B4B4;
+    background-color: rgba(255, 145, 1, 0.849);
     padding: 2rem;
     margin: 1rem;
     border-radius: 5px;
