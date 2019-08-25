@@ -1,13 +1,21 @@
 :root
 {
-    --color-primary: #2196F3;
-    --color-secondary: #e47d08;
+    --color-primary: #0063B2FF;
+    --color-secondary: #9CC3D5FF;
     --color-primary-light: #DFF7F7;
     --color-primary-dark: #1976D2;
     --color-accent: #1976D2;
     --color-primary-text: #000000;
     --color-secondary-text: #757575;
     --font-primary: 'Poppins', sans-serif;
+
+
+    --about-us-color-primary: #689EB8;
+    --about-us-color-seconday: #F3F4F6;
+
+    --contact-us-color-primary:#689EB8;
+    --contact-us-color-secondary: #F3F4F6;
+
 }
 *
 {
@@ -21,10 +29,45 @@ body
     font-family: var(--font-primary);
 }
 
-brand
+.heading-center-main
+{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.heading-center-sub
+{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.paragraph-medium
+{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+/* Navbar */
+
+#brand
 {
     display: flex;
-    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0.1rem;
+    padding: 0.25rem;
+}
+
+#brand h3
+{
+    margin: 0px;
+    padding: 0.2rem;
 }
 
 .icon {
@@ -36,30 +79,29 @@ brand
 #navbar
 {
     display: flex;
-    background-color: var(--color-primary);
+    background-color: #142E54;
     position: sticky;
-    color: var(--color-primary-text);
+    color: #C2CCC5;
     justify-content: space-between; 
     z-index: 1;
-    padding: 0.3rem;
 }
 
 #nav-links
 {
     display: flex;
     align-items: center;
+    margin: 0.1rem;
+    padding: 0.25rem;
 }
 
 .nav-link
 {
     list-style: none;
-    padding: 0.5rem;
-    
 }
 
 .nav-link a
 {
-    color: var(--color-primary-text);
+    color: #C2CCC5;
     text-decoration: none;
     padding: 0.5rem;
 
@@ -69,13 +111,20 @@ brand
 {
     background-color: var(--color-primary-light);
     color: var(--color-primary-dark);
+    text-decoration: none;
     border-radius: 3px;
 }
+
+
+/* Navbar Over */
+
+
 
 #cover
 {
     background: var(--color-primary-light) url(./Assests/images/cover1.png) no-repeat center center/cover;
     height: 100vh;
+    margin-bottom: 0;
 }
 
 #cover div
@@ -95,6 +144,10 @@ brand
 {
     font-size: 2.5rem;
 }
+
+
+/* Cover Ended */
+
 
 #application
 {
@@ -129,23 +182,17 @@ brand
     font-size: 4rem;
 }
 
-.heading-center-main
+
+
+/* About Us */
+
+#AboutUs
 {
-    text-align: center;
-    font-size: 3.5rem;
+    margin: 0px;
+    color: var(--about-us-color-seconday);
+    background-color: var(--about-us-color-primary);
 }
 
-.heading-center-sub
-{
-    text-align: center;
-    font-size: 2rem;
-}
-
-.paragraph-medium
-{
-    text-align: center;
-    font-size: 1.3rem;
-}
 
 #AboutUs-Content
 {
@@ -193,10 +240,59 @@ brand
     align-items: center;
     align-content: center;
     width: 300px;
-    background-color: #1976D2;
+    background-color: #B4B4B4;
     padding: 2rem;
     margin: 1rem;
     border-radius: 5px;
     box-shadow: 5px 5px 10px 1px rgb(115, 135, 151);
 }
 
+
+/* About Us Ended */
+
+
+#contact-us
+{
+    color: var(--contact-us-color-secondary);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 4rem 0;
+    background-color: var(--contact-us-color-primary);
+}
+
+#contact-us-content
+{
+    display: flex;
+    padding: 2rem 0 2rem 0;
+    flex-wrap: wrap;
+}
+
+#contact-address, #contact-form, #contact-map
+{
+    flex: 1;
+}
+
+#contact-address
+{
+    padding-top: 2rem;
+}
+
+
+#contact-form, #contact-address
+{
+    padding: 0 1rem 0 1rem;
+}
+
+
+#contact-form button
+{
+    width: 100%;
+    color: var(--contact-us-color-primary);
+    background-color: var(--about-us-color-seconday);
+}
+
+#contact-form div div span
+{
+    color: var(--contact-us-color-primary);
+    background-color: var(--about-us-color-seconday);
+}
